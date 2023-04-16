@@ -1,0 +1,190 @@
+body{
+    background-color: #212529;
+    color: #6A6F75;
+    font-family: 'PT Mono', monospace;
+}
+
+.line-after{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+span {
+    vertical-align: baseline;
+    position: relative;
+}
+
+span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-left: 10px;
+    border-top: 2px solid aqua;
+}
+
+.container-fluid .row {
+    margin: 0;
+    padding: 0;
+}
+
+.div-section {
+    padding: 2% 7%;
+}
+
+.section {
+    padding: 0 0 20%;
+}
+
+
+/* Header */
+
+    /* Navigation Bar */
+
+    .btn-curriculo {
+        font-size: 1.1rem;
+        color: aqua;
+        border-color: aqua;
+    }
+
+    .btn-curriculo:hover {
+        background-color: aqua;
+        color: #6A6F75;
+        opacity: 50%;
+    }
+
+    .typewriter  {
+        display: grid;
+        place-items: center;
+      }
+
+      .typing{
+        width: 11ch;
+        animation: typing 1.5s steps(11), step-end infinite;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2.5px solid;
+        font-family: "Russo One";
+        font-size: 1.25rem;
+        height: 40px;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { 
+            width: 0
+        }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink {
+        50% { 
+            border-color: transparent 
+        }
+      }
+      
+    .navbar {
+        align-items: center;
+    }
+
+    .navbar-brand {
+        color: #6A6F75;
+        font-family: "Russo One";
+        font-size: 1.5rem;
+        height: 40px;
+        padding: 0;
+    }
+
+    .navbar-brand:hover {
+        color: aqua;
+    }
+
+    .nav-item {
+        padding: 0 18px;
+    }
+    
+    .nav-link {
+        font-family: 'PT Mono', monospace;
+        font-size: 1.1rem;
+        color: #6A6F75;
+    }
+
+    .nav-link:hover{
+        color: aqua;
+    }
+
+/* Intro Section */
+
+#intro {
+    padding: 5% 0 5% 0;
+}
+
+#intro h1 {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+#intro h2 {
+    color:aqua;
+    font-size: 2.5rem;
+    line-height: 2;
+}
+
+#intro h3 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* About Section */
+
+#about h2 {
+    color:aqua;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.div-image{
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.my-image{
+    width: 250px;
+    border-radius: 2.5%;
+}
+
+/* Projects Section */
+
+#projects h2 {
+    color:aqua;
+}
+
+/* Footer Section */
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+.social-icon:hover {
+    color: aqua;
+}
+
+#footer {
+    text-align: center;
+    padding: 15% 0 5%;
+}
+
+#footer p {
+    color: aqua;
+}
